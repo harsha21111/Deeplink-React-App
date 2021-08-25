@@ -1,0 +1,52 @@
+ .Button{
+  position: absolute;
+  right: 10%;
+  margin-top: 5%; 
+} 
+
+.container{
+  display: flex;
+  width:100%;
+  margin: 40%;
+  margin-top: 5%;
+}
+
+ .row{
+  outline: 1rem;
+  border-color: black;
+  border-block-color: black;
+  margin-top: 40%;
+  
+} 
+
+.table-responsive-sm{
+  margin: 20%;
+  margin-top: 15%;
+}
+.pagination{
+  position: absolute;
+  right: 10%;
+}
+
+/* .MuiButtonBase-root {
+  position: absolute;
+ }  */
+
+ .btn{
+  margin-top: 10%;
+  margin-left: 83vh;
+  width:60%;
+ }
+
+ .grid{
+    display: flex; 
+   height: 300px;
+   width: 200%; 
+   /* margin: 40%; 
+   margin-left:40%;
+   margin-top: 5%; */
+ }
+.con{
+  width: 100%;
+  
+}

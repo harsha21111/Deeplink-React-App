@@ -14,11 +14,8 @@ const Header = () => {
   return (
     <div>
       <Navbar color="danger" light expand="md">
-        <NavbarBrand href="/">React Application</NavbarBrand>
+        <NavbarBrand href="/"><h4>DeepLink</h4></NavbarBrand>
         <Nav className="mr-auto" navbar>
-          <NavItem>
-            <NavLink href="/Components/">Components</NavLink>
-          </NavItem>
           <NavItem>
             <NavLink href="/Signup" icon={<FaClipboardList />}>
               Sign-Up

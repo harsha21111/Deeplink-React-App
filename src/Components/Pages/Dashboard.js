@@ -27,11 +27,7 @@ handleChange(event){
 
 render(){
 	return(
-		<div style={{
-                  width: 700,
-                  padding: 30,
-				  marginLeft:180
-				  }}>
+		<div className="Container">
 		<div>
 			<h4> Employee Personal Info</h4>
 		</div>

@@ -1,7 +1,12 @@
 import Header from "./Components/templates/Header";
 import SideNavigation from "./Components/templates/SideNavigation";
 import { Col, Row } from "reactstrap";
-import Dashboard from "./Components/Pages/Dashboard";
+//import Dashboard from "./Components/Pages/Dashboard";
+//import Campaigns from "./Components/Pages/Campaigns";
+//import Deeplinks from "./Components/Pages/Deeplink";
+//import Events from "./Components/Pages/Events";
+import RoutingPath from "./Routing/RoutingPath";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   const styles = {
@@ -22,11 +27,23 @@ function App() {
       </Row>
 
       <div style={styles.contentDiv}>
-        <SideNavigation></SideNavigation>
-        <div>
+        <BrowserRouter>        
+        <SideNavigation>
+        </SideNavigation>
+        <RoutingPath></RoutingPath>
+        </BrowserRouter>
+        {/* <div>
         <Dashboard />
-        </div>
-          
+        </div> */}
+         {/* <div>
+         <Campaigns />
+           </div>  */}
+           {/* <div>
+             <Deeplinks />
+           </div> */}
+           {/* <div>
+             <Events />
+           </div> */}
         
       </div>
     </>
