@@ -25,7 +25,7 @@ const columns = [
       width: 300,
     },
     {
-      field: 'campaignCode',
+      field: 'campaignId',
       headerName: 'Campaign Code',
       width: 150,
     },
@@ -59,12 +59,12 @@ class Deeplinks extends React.Component{
 
 
   componentDidMount(){
-    fetch('https://localhost:44319/api/campaignapi')
+    fetch('https://localhost:44319/api/deeplinkapi')
     .then(res => res.json())
     .then(result => {
         this.setState({
             isLoaded:true,
-             dataSource: JSON.parse(JSON.stringify(result).replaceAll('campaignId','id'))
+             dataSource: JSON.parse(JSON.stringify(result).replaceAll('linkId','id'))
             
         })
     },

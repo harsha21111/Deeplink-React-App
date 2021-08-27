@@ -30,8 +30,8 @@ const columns = [
       width: 150,
     },
     {
-      field: 'organization',
-      headerName: 'Organization',
+      field: 'organizationId',
+      headerName: 'Organization Id',
       width: 150,
     },
     {
@@ -69,12 +69,12 @@ class Events extends React.Component{
 
 
   componentDidMount(){
-    fetch('https://localhost:44319/api/campaignapi')
+    fetch('https://localhost:44319/api/eventapi')
     .then(res => res.json())
     .then(result => {
         this.setState({
             isLoaded:true,
-             dataSource: JSON.parse(JSON.stringify(result).replaceAll('campaignId','id'))
+             dataSource: JSON.parse(JSON.stringify(result).replaceAll('eventId','id'))
             
         })
     },

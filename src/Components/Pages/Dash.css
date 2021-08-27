@@ -8,7 +8,7 @@
 .Container{
     /* display: block; */
     display: "flex";
-    width:180%;
-    margin: 40%;
+    width:100%;
+    margin: 50%;
     margin-top: 5%;
 }

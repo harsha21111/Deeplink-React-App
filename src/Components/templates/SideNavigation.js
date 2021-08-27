@@ -10,7 +10,6 @@ import {
 } from "react-pro-sidebar";
 import "react-pro-sidebar/dist/css/styles.css";
 import {FiLogOut} from "react-icons/fi";
-//import { BiCog } from "react-icons/bi";
 import { Link } from "react-router-dom";
 
 
@@ -37,12 +36,10 @@ const SideNavigation = () => {
         </div>
       </SidebarHeader>
       <Menu iconShape="square">
-        <MenuItem icon={<FaDesktop />}>  <Link to = "/">Dashboard</Link></MenuItem>
-          
-        <MenuItem icon={<FaClipboardList />}> <Link to = "/campaigns">Campaigns</Link></MenuItem>
-        
-        {/* <MenuItem icon={<FaClipboardList />}>Deeplink</MenuItem>
-        <MenuItem icon={<FaClipboardList />}>Event</MenuItem>         */}
+        <MenuItem icon={<FaDesktop />}><Link to = "/">Dashboard</Link></MenuItem>
+        <MenuItem icon={<FaClipboardList />}><Link to = "/campaigns">Campaigns</Link></MenuItem>
+        <MenuItem icon={<FaClipboardList />}><Link to = "/deeplinks">Deeplinks</Link></MenuItem>
+        <MenuItem icon={<FaClipboardList />}><Link to = "/events">Events</Link></MenuItem>        
       </Menu>
           <SidebarFooter>
             <Menu iconShape="square">

@@ -94,7 +94,6 @@ render(){
 		/>
 		</div>
 		</div>
-
         <div className="form-group">
 		<input type="text"
 		className="form-control"
@@ -124,11 +123,13 @@ render(){
 		/>
 		</div>
 		</div>
-        <Button variant="primary" type="submit">
+		<div>
+		 <Button variant="primary" type="submit">
            Save
-        </Button>
-
+        </Button> 
+		</div>
       </Form>
+
 
     </div>
 
